@@ -1,1 +1,24 @@
 
+### Scrapy框架
+只要定制几个模块Scrapy架构图（绿色部分为数据的流向）
+![数据图](https://github.com/cser18/Scrapy-/blob/master/img/12983160-796fd5bfb38a39ec.webp "架构图")
+
+我们看到图里有这么几个东西，分别是
+* Spiders：爬虫，定义了爬取的逻辑和网页内容的解析规则，主要负责解析响应并生成结果和新的请求
+* Engine：引擎，处理整个系统的数据流处理，出发事物，框架的核心。
+* Scheduler：调度器，接受引擎发过来的请求，并将其加入队列中，在引擎再次请求时将请求提供给引擎
+* Downloader：下载器，下载网页内容，并将下载内容返回给spider
+* ItemPipeline：项目管道，负责处理spider从网页中抽取的数据，主要是负责清洗，验证和向数据库中存储数据
+* Downloader Middlewares：下载中间件，是处于Scrapy的Request和Requesponse之间的处理模块
+* Spider Middlewares：spider中间件，位于引擎和spider之间的框架，主要处理spider输入的响应和输出的结果及新的请求middlewares.py里实现
+
+**当调度器中不存在任何request了， 整个程序将会停止。**
+
+总结：
+![总结](https://github.com/cser18/Scrapy-/blob/master/img/12983160-394d93c87390c455.webp "总结图")
+
+制作Scrapy爬虫一共需要4步：
+* 新建项目： 新建一个爬虫项目
+* 明确目标： 明确要爬取的目标
+* 制作爬虫： 制作爬虫开始爬取网页
+* 存储内容： 设计管道爬取内容
