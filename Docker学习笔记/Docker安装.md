@@ -1,6 +1,6 @@
 ### Docker的架构图
 
-![D2](C:\Users\shuhan_ge\Documents\GitHub\study-\img\Docker学习笔记\D2.png)
+![D2](https://github.com/cser18/study-/blob/master/img/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/D2.png)
 
 
 
@@ -51,13 +51,13 @@ Docker 镜像（Image）就是一个可读的模板，镜像可以用来创建Do
 
 
 
-![D3](C:\Users\shuhan_ge\Documents\GitHub\study-\img\Docker学习笔记\D3.png)
+![D3](https://github.com/cser18/study-/blob/master/img/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/D3.png)
 
 
 
 * run做了什么？
 
-![D4](C:\Users\shuhan_ge\Documents\GitHub\study-\img\Docker学习笔记\D4.png)
+![D4](https://github.com/cser18/study-/blob/master/img/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/D4.png)
 
 ## 底层原理
 
