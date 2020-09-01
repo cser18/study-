@@ -6,4 +6,4 @@
 
 ### Docker： 镜像即应用
 
- <img src="C:\Users\shuhan_ge\Documents\GitHub\study-\img\Docker学习笔记\D1.png" alt="D1" />
+ <img src="https://github.com/cser18/study-/blob/master/img/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/D1.png" alt="D1" />
