@@ -120,3 +120,12 @@ public class Thread3 implements Runnable {
 
 ```
 
+## 实现Callable接口 (可以定义返回值、和抛出异常)
+
+* 实现Callable接口 需要返回值类型
+* 重写call方法，需要抛出异常
+* 创建对象目标
+* 创建执行服务ExecutorService ser= Executors.newFixedThreadPool(1);
+* 提交执行 Future<Boolean> result = ser.submit(t1)
+* 获取结果 boolean r = result.get()
+* 关闭服务：ser.shutdownNow()
